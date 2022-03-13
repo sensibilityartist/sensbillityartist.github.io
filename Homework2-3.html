@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Homework2-3</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
+<body>
+
+<h2>Articles</h2>
+
+<div class="row">
+  <div class="column">
+    <h2>Cardiff orchestra pulls Tchaikovsky music over war</h2>
+    <p>A Welsh orchestra has dropped music by Russian composer Tchaikovsky from a concert because of the Ukraine war.
+        Cardiff Philharmonic Orchestra said it would be "inappropriate at this time" to perform the composer's music after Russia's invasion of Ukraine.
+       The orchestra said a member had family in Ukraine and it was also aware some of Tchaikovsky's work was deemed offensive to Ukrainians.
+       It had planned a Tchaikovsky concert at St David's Hall in Cardiff on 18 March.
+       Instead, it will perform works by John Williams, Dvorak and Elgar
+       In a statement issued on its Facebook site, the orchestra said the decision was based on "here and now".
+       It added: "A member of the orchestra has family directly involved in the Ukraine situation and we are trying to respect that situation during the immediate term.</p>
+  </div>
+  <div class="column">
+    <h2>World Book Day held in Boston without a wizard in sight</h2>
+    <p>A primary school in Lincolnshire has held an alternative World Book Day event, with no boy wizards or cardboard robots allowed.
+        St Nicholas Church of England Academy in Boston said for them the focus was about books - not dressing up.
+        Head teacher Fiona Booth said the school did not want to "put pressure on families to go out and buy things".
+        World Book Day's chief executive said dressing up encouraged children to talk about the books they were reading.</p>
+  </div>
+</div>
+
+</body>
+</html>
