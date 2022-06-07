@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>manu</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Dongle&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap');
+    table, th, td, div
+    {
+        width: 38%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    th
+    {
+        font-size: 29px;
+    }
+    td
+    {
+        font-size: 25px;
+    }
+    h2
+    {
+        text-align: center;
+        font-size: 77px;
+        font-family: 'Nanum Brush Script', cursive;
+    }
+    p
+    {
+        text-align: center;
+        font-size: 59px;
+        font-family: 'Dongle', sans-serif;
+    }
+    table
+    {
+        background-color: #FDF5E6;
+    }
+
+</style>
+<script src="C:\Users\John-Kim\Desktop\manu.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+<body bgcolor= #FFEFD5>
+<h2> 감성 카페 </h2>
+ <form action="">
+ <p> 메뉴판 </p>
+ <table border="1"> 
+ <tr>
+    <th> 메뉴 </td>
+    <th> 가격 </th> 
+    <th> 수량 </th> 
+    <th> 합계 </th> 
+ </tr>
+ <tr>
+ <td> 아메리카노</td> <td> 2500원 </td>
+ <td>
+    <select id="coffee" placeholder="커피" value="0" onclick="this.select();">
+        <option value="0" selected>0잔</option>
+        <option value="1">1잔</option>
+        <option value="2">2잔</option>
+        <option value="3">3잔</option>
+        <option value="4">4잔</option>
+        <option value="5">5잔</option>
+    </select>
+ </td>
+ <td>
+     <input id="coffeeTotal" type="text" size="5" value="0"/>
+ </td>
+ </tr>
+ <tr>
+ <td> 카페라떼 </td> <td> 3000원 </td>
+<td>
+    <select id="lat" placeholder="카페라떼" value="0" onclick="this.select();">
+        <option value="0" selected>0잔</option>
+        <option value="1">1잔</option>
+        <option value="2">2잔</option>
+        <option value="3">3잔</option>
+        <option value="4">4잔</option>
+        <option value="5">5잔</option>
+    </select>
+</td>
+ 
+ <td> <input id="latTotal" type="text" size="5" value="0"/></td>
+ </tr>
+ <tr>
+ <td> 와플 </td> <td> 2800원 </td>
+ <td>
+    <select id="wap" placeholder="와플" value="0" onclick="this.select();">
+        <option value="0" selected>0개</option>
+        <option value="1">1개</option>
+        <option value="2">2개</option>
+        <option value="3">3개</option>
+        <option value="4">4개</option>
+        <option value="5">5개</option>
+    </select>
+ </td>
+ <td> <input id="wapTotal" type="text" size="5"  value="0"/> </td>
+ </tr>
+ <tr>
+ <td> 합계</td> <td> &nbsp; </td>
+ <td> <input id="totalNumber" type="text" sizw="7" value="0"/> </td>
+ <td> <input id="totalPrice"  type="text" size="5" value="0"/></td>
+ </tr>
+ </table>
+ <br>
+ <div>
+ <input type="button" value="합계계산" onclick="updateAll()"/>
+ <input type="reset" value="초기화"/>
+ </div>
+ <div id="time"></div>
+ <div id="date"></div>
+ </form>
+ </body>
+</html>
